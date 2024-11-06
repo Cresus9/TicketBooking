@@ -1,0 +1,42 @@
+.event-gallery {
+  .image-gallery-slide {
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+
+  .image-gallery-thumbnail {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+
+    &.active,
+    &:hover {
+      border-color: #4f46e5;
+    }
+  }
+
+  .image-gallery-thumbnail-inner {
+    height: 100%;
+  }
+
+  .image-gallery-thumbnails-wrapper {
+    margin-top: 1rem;
+  }
+
+  .image-gallery-icon {
+    color: white;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: #4f46e5;
+    }
+  }
+
+  .image-gallery-fullscreen-button {
+    bottom: 0;
+    right: 0;
+    top: auto;
+  }
+}
